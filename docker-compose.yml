@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  bot:
+    build:
+      context: bot
+    ports:
+      - 3978:3978
+  ai:
+    build:
+      context: ai
+    ports:
+      - 1337:1337
